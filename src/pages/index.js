@@ -79,6 +79,19 @@ export default function Home() {
             <div className="stand-2"></div>
           </div>
         </section>
+        <section className="about" id="about">
+          <h3>Watch the Notes</h3>
+          <p>
+            Our primary objective is to bring live boxing matches to fans all
+            around the world
+          </p>
+
+          <h3>Its not about Sing Alone!</h3>
+          <p>
+            We also air documentaries specially made for the greats, lifestyle
+            of boxers, news, and more.
+          </p>
+        </section>
       </main>
     </>
   );

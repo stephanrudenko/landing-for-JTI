@@ -110,3 +110,99 @@ a {
     color-scheme: dark;
   }
 }
+
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.introtext h3 {
+  margin-bottom: 0.5rem;
+}
+
+.hear {
+  color: blueviolet;
+}
+
+.connecting {
+  color: red;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 0.6rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.red {
+  background-color: red;
+  margin-right: 1.5rem;
+}
+
+.red:hover {
+  background-color: #fff;
+  color: #f1262d;
+}
+
+.blue {
+  background-color: blueviolet;
+}
+
+.blue:hover {
+  background-color: #fff;
+  color: blueviolet;
+}
+
+iframe {
+  max-width: 30rem;
+  border-top: 20px groove blueviolet;
+  border-bottom: 20px groove blueviolet;
+  border-right: 14px solid red;
+  border-left: 14px solid red;
+}
+
+.stand-1 {
+  height: 90px;
+  width: 6px;
+  background-color: blueviolet;
+  transform: rotate(40deg);
+  position: relative;
+  top: -16px;
+  left: 200px;
+}
+
+.stand-2 {
+  height: 90px;
+  width: 6px;
+  background-color: red;
+  transform: rotate(-40deg);
+  position: relative;
+  top: -105px;
+  left: 255px;
+}
+
+.about {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  margin-bottom: -20px;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.about p {
+  font-size: 1.5em;
+  text-shadow: 2px 2px 2px #333;
+}
