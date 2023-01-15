@@ -23,43 +23,62 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/nanotechnology.png" />
       </Head>
-      <nav className={styles.navbar}>
-        <Link href="/">
-          <h1 className={styles.logo}>
-            <span className={styles.pop}>Pop</span>
-            <span className={styles.tv}>TV</span>
-            <span className={styles.fist}>&#x1f3a4;</span>
-          </h1>
-        </Link>
-        <ul className={styles.navline}>
-          <li className={styles.navItem}>
-            <Link href="#about" className={styles.navLink} id="nav-link">
-              About
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#stars" className={styles.navLink} id="nav-link">
-              Pop Stars
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#stakeholders" className={styles.navLink} id="nav-link">
-              stakeholders
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#sub" className={styles.navLink} id="nav-link">
-              Subscribe
-            </Link>
-          </li>
-        </ul>
-        <div className={styles.hamburger} id="hamburger">
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-      </nav>
       <main>
+        <nav className={styles.navbar}>
+          <Link href="/">
+            <h1 className={styles.logo}>
+              <span className={styles.pop}>Pop</span>
+              <span className={styles.tv}>TV</span>
+              <span className={styles.fist}>&#x1f3a4;</span>
+            </h1>
+          </Link>
+          <div className="theme-switch">
+            <input
+              type="checkbox"
+              className="checkbox"
+              id="checkbox"
+              onChange={() => {
+                document.body.classList.toggle("dark");
+              }}
+            />
+            <label for="checkbox" className="label">
+              <ion-icon name="partly-sunny-outline" className="sun"></ion-icon>
+              <ion-icon name="moon-outline" className="moon"></ion-icon>
+              <div className="switcher"></div>
+            </label>
+          </div>
+          <ul className={styles.navline}>
+            <li className={styles.navItem}>
+              <Link href="#about" className={styles.navLink} id="nav-link">
+                About
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#stars" className={styles.navLink} id="nav-link">
+                Pop Stars
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link
+                href="#stakeholders"
+                className={styles.navLink}
+                id="nav-link"
+              >
+                stakeholders
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#sub" className={styles.navLink} id="nav-link">
+                Subscribe
+              </Link>
+            </li>
+          </ul>
+          <div className={styles.hamburger} id="hamburger">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+        </nav>
         <section className={styles.hero}>
           <div className="intro-text">
             <h1>
@@ -108,25 +127,24 @@ export default function Home() {
         <section className="stars" id="stars">
           <div className="stars-gallery">
             <a href="src/assets/images/adamlevine.jpg" className="big">
-              <Image src={adam} alt="Adam Levine" title="AL" />
+              <Image src={adam} alt="Adam Levine" title="Adam Levine" />
             </a>
             <a href="images/dualipa.webp" className="big">
-              <Image src={dualipa} alt="Dua Lipa" title="DL" />
+              <Image src={dualipa} alt="Dua Lipa" title="Dua Lipa" />
             </a>
             <a href="../assets/images/dualipa.webp" className="big">
-              <Image src={geazy} alt="G-Eazy" title="GE" />
+              <Image src={geazy} alt="G-Eazy" title="G-Eazy" />
             </a>
             <a href="../assets/images/dualipa.webp" className="big">
-              <Image src={katyperry} alt="Katy Perry" title="KP" />
+              <Image src={katyperry} alt="Katy Perry" title="Katy Perry" />
             </a>
             <a href="../assets/images/dualipa.webp" className="big">
-              <Image src={weeknd} alt="The Weeknd" title="TW" />
+              <Image src={weeknd} alt="The Weeknd" title="The Weeknd" />
             </a>
             <a href="../assets/images/dualipa.webp" className="big">
               <Image src={halsey} alt="Halsey" title="Halsey" />
             </a>
           </div>
-          Type here somethin
         </section>
         <section className="people" id="stakeholders">
           <div className="stakeholders">
