@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import adam from "../assets/images/adamlevine.jpg";
+import dualipa from "../assets/images/dualipa.webp";
+import geazy from "../assets/images/g-eazy.webp";
+import katyperry from "../assets/images/KATY-2.webp";
+import weeknd from "../assets/images/weeknd.jpg";
+import simpleLightbox from "simplelightbox";
 
 export default function Home() {
   return (
@@ -70,7 +77,7 @@ export default function Home() {
             <iframe
               width={560}
               height={315}
-              src="https://music.youtube.com/watch?v=JTxhmZTG72o&feature=share"
+              src="https://www.youtube.com/watch?v=09R8_2nJtjg"
               title="Youtube Music Favorite Track of Wk3"
               frameBorder={10}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -91,6 +98,26 @@ export default function Home() {
             We also air documentaries specially made for the greats, lifestyle
             of boxers, news, and more.
           </p>
+        </section>
+        <section className="stars" id="stars">
+          <div className="stars-gallery">
+            <a href="src/assets/images/adamlevine.jpg" className="big">
+              <Image src={adam} alt="Adam Levine" title="AL" />
+            </a>
+            <a href="images/dualipa.webp" className="big">
+              <Image src={dualipa} alt="Dua Lipa" title="DL" />
+            </a>
+            <a href="../assets/images/dualipa.webp" className="big">
+              <Image src={geazy} alt="G-Eazy" title="GE" />
+            </a>
+            <a href="../assets/images/dualipa.webp" className="big">
+              <Image src={katyperry} alt="Katy Perry" title="KP" />
+            </a>
+            <a href="../assets/images/dualipa.webp" className="big">
+              <Image src={weeknd} alt="The Weeknd" title="TW" />
+            </a>
+          </div>
+          Type here somethin
         </section>
       </main>
     </>
