@@ -14,7 +14,6 @@ import stepan from "../assets/images/stepan.jpg";
 import melania from "../assets/images/melania.jpg";
 import megan from "../assets/images/megan.jpg";
 import Script from "next/script";
-import simpleLightbox from "simplelightbox";
 
 export default function Home() {
   return (
