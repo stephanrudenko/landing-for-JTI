@@ -314,3 +314,10 @@ form {
 ion-icon:hover {
   color: red;
 }
+
+footer {
+  padding: 2rem;
+  border-top: 1px solid #f1f1f1;
+  box-shadow: 0px -2px 3px #f1f1f1;
+  text-align: center;
+}

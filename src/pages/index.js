@@ -184,8 +184,8 @@ export default function Home() {
           type="module"
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
         />
-        ;
       </main>
+      <footer>&copy;2023. All Rights Reserved</footer>
     </>
   );
 }
