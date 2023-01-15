@@ -80,12 +80,13 @@ export default function Home() {
           </div>
           <div className="i-frame">
             <iframe
-              width={560}
-              height={315}
-              src="https://www.youtube.com/watch?v=09R8_2nJtjg"
-              title="Youtube Music Favorite Track of Wk3"
-              frameBorder={10}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/F4owNCqJCIc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             ></iframe>
             <div className="stand-1"></div>
             <div className="stand-2"></div>
@@ -167,7 +168,7 @@ export default function Home() {
           </form>
         </section>
         <section className="social">
-          <h3>Connect with us on Social Media</h3>
+          <h3>Connect with me on Social Media</h3>
           <div className="socicons">
             <Link href="https://www.linkedin.com/in/stepan-rudenko-ab7a9b222/">
               <ion-icon name="logo-linkedin"></ion-icon>
@@ -180,6 +181,23 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        <i
+          className="scroll-up"
+          id="scroll-up"
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            })
+          }
+        >
+          <ion-icon
+            name="arrow-up-circle-outline"
+            className="socicon up-arrow"
+            alt="up-arrow"
+          ></ion-icon>
+        </i>
         <Script
           type="module"
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
