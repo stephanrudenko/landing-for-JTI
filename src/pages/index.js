@@ -7,6 +7,10 @@ import dualipa from "../assets/images/dualipa.webp";
 import geazy from "../assets/images/g-eazy.webp";
 import katyperry from "../assets/images/KATY-2.webp";
 import weeknd from "../assets/images/weeknd.jpg";
+import halsey from "../assets/images/halsey.webp";
+import stepan from "../assets/images/stepan.jpg";
+import melania from "../assets/images/melania.jpg";
+import megan from "../assets/images/megan.jpg";
 import simpleLightbox from "simplelightbox";
 
 export default function Home() {
@@ -87,7 +91,7 @@ export default function Home() {
           </div>
         </section>
         <section className="about" id="about">
-          <h3>Watch the Notes</h3>
+          <h3>Watch the Stars</h3>
           <p>
             Our primary objective is to bring live boxing matches to fans all
             around the world
@@ -116,8 +120,32 @@ export default function Home() {
             <a href="../assets/images/dualipa.webp" className="big">
               <Image src={weeknd} alt="The Weeknd" title="TW" />
             </a>
+            <a href="../assets/images/dualipa.webp" className="big">
+              <Image src={halsey} alt="Halsey" title="Halsey" />
+            </a>
           </div>
           Type here somethin
+        </section>
+        <section className="people" id="stakeholders">
+          <div className="stakeholders">
+            <div className="persons">
+              <div className="person-1">
+                <Image src={stepan} alt="Stepan Rudenko" className="img" />
+                <p className="name">Stepan Rudenko</p>
+                <p className="role">Founder</p>
+              </div>
+              <div className="person-2">
+                <Image src={melania} alt="Melania Fox" className="img" />
+                <p className="name">Melania Fox</p>
+                <p className="role">Co-Founder</p>
+              </div>
+              <div className="person-2">
+                <Image src={megan} alt="Megan Gray" className="img" />
+                <p className="name">Megan Gray</p>
+                <p className="role">Head Analyst</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </>

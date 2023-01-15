@@ -229,3 +229,37 @@ iframe {
 .stars-gallery a:nth-child(2) {
   grid-column: 3/5;
 }
+
+.people {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.stakeholders {
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.stakeholders img {
+  border-radius: 0.7rem;
+  width: 100%;
+  height: auto;
+}
+
+.persons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 1rem;
+}
+
+.name {
+  color: blueviolet;
+  text-align: center;
+}
+
+.role {
+  color: red;
+  text-align: center;
+  font-size: 0.8rem;
+}
