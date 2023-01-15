@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Home.module.css";
@@ -41,7 +43,7 @@ export default function Home() {
                 document.body.classList.toggle("dark");
               }}
             />
-            <label for="checkbox" className="label">
+            <label htmlFor="checkbox" className="label">
               <ion-icon name="partly-sunny-outline" className="sun"></ion-icon>
               <ion-icon name="moon-outline" className="moon"></ion-icon>
               <div className="switcher"></div>
@@ -103,9 +105,9 @@ export default function Home() {
               height="315"
               src="https://www.youtube.com/embed/F4owNCqJCIc"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
             <div className="stand-1"></div>
             <div className="stand-2"></div>
