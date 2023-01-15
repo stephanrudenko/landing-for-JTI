@@ -11,6 +11,7 @@ import halsey from "../assets/images/halsey.webp";
 import stepan from "../assets/images/stepan.jpg";
 import melania from "../assets/images/melania.jpg";
 import megan from "../assets/images/megan.jpg";
+import Script from "next/script";
 import simpleLightbox from "simplelightbox";
 
 export default function Home() {
@@ -147,6 +148,43 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="sub" id="sub">
+          <h3>Subscribe for my future updates</h3>
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email-sub"
+              className="email-sub"
+              required
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              id="submit-btn"
+              className="submit-btn"
+            />
+          </form>
+        </section>
+        <section className="social">
+          <h3>Connect with us on Social Media</h3>
+          <div className="socicons">
+            <Link href="https://www.linkedin.com/in/stepan-rudenko-ab7a9b222/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </Link>
+            <Link href="https://www.instagram.com/stephanrudenko/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </Link>
+            <Link href="https://www.facebook.com/stefRuDen/">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </Link>
+          </div>
+        </section>
+        <Script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        />
+        ;
       </main>
     </>
   );
